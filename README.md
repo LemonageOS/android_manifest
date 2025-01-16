@@ -1,36 +1,18 @@
-LineageOS
+LemonageOS
 ===========
 
-Getting started
----------------
+ ### Instructions
+ 1. Make sure you have a build environment setup.
+ 2. Run the following commands to sync LemonageOS source
 
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
-
-To initialize your local repository using the LineageOS trees, use a command like this:
+```bash
+mkdir lemonage && cd lemonage
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-18.1 --git-lfs
+```bash
+repo init -u https://github.com/LemonageOS/android_manifest -b lineage-18.1
 ```
-Then to sync up:
+```bash
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
-repo sync
-```
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
-
-Submitting patches
-------------------
-Patches are always welcome! Please submit your patches via LineageOS Gerrit!
-
-Simply follow our guide on [how to submit patches](https://wiki.lineageos.org/submitting-patch-howto.html).
-
-To view the status of your and others' patches, visit [LineageOS Gerrit Code Review](https://review.lineageos.org/).
-
-
-Buildbot
---------
-
-All supported devices are built weekly and periodically as changes are committed to ensure the source trees remain buildable.
-
-You can view the current build statuses at [LineageOS Buildkite](https://buildkite.com/lineageos).
-
-Builds produced weekly by the buildbot can be downloaded from [LineageOS downloads](https://download.lineageos.org/).
+ 3. Once the source is downloaded prepare your trees and build.
