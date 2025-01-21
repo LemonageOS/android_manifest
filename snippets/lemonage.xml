@@ -6,4 +6,6 @@
         revision="lineage-18.1" />
 
     <project path="android" name="android_manifest" remote="lemonage" />
+    <project path="packages/apps/WebView" name="android_packages_apps_WebView" remote="lemonage" revision="main"/>
+    <project path="vendor/lineage" name="android_vendor_lemonage" remote="lemonage" />
 </manifest>
