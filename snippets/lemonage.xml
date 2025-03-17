@@ -5,6 +5,12 @@
           fetch="https://github.com/LemonageOS"
           revision="refs/heads/lineage-18.1" />
 
+  <remote name="gitlab"
+          fetch="https://gitlab.com/lemonageos"
+          revision="refs/heads/main" />
+
   <project path="android" name="android_manifest" remote="lemonage" />
+  <project path="packages/apps/WebView" name="android_packages_apps_webview" remote="gitlab" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="lemonage" />
 
 </manifest>
