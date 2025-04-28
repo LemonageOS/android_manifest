@@ -25,6 +25,7 @@
   <project path="frameworks/libs/systemui" name="P-404/android_frameworks_libs_systemui" revision="rippa" />
   <project path="packages/apps/404Launcher" name="android_packages_apps_404Launcher" remote="lemonage" revision="rippa" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="lemonage" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="lemonage" />
   <project path="packages/apps/WebView" name="android_packages_apps_webview" remote="gitlab" />
   <project path="vendor/lineage" name="android_vendor_lineage" remote="lemonage" />
 
